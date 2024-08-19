@@ -3,7 +3,7 @@ import "./App.css";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import {Link} from "react-scroll";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter, Router, Switch } from "react-router-dom";
 
 function App() {
   
@@ -23,7 +23,7 @@ function App() {
   
 
   return (
-    <HashRouter>
+    <BrowserRouter>
     <main>
       <div id="nav" className="w-full fixed top-0 left-0 z-10">
         <div className="p-4 flex justify-between items-center">
@@ -219,7 +219,7 @@ function App() {
                       Developed an internal web application to monitor and display
                       software and firmware module activity.
                       Implemented for a team of 100+ technicians to use, 
-                      reducing manual labor from 15min to 1min per unit.
+                      reducing manual labor from 15min per unit to 1min per unit.
                     </li>
                     <br />
                     <li className="list-disc">
@@ -465,7 +465,7 @@ function App() {
       </footer>
       
     </main>
-    </HashRouter>
+    </BrowserRouter>
     
   );
   
