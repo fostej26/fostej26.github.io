@@ -115,7 +115,7 @@ function App() {
         </h3>
       </div>
       
-      <div className="flex flex-col w-full justify-center items-center">
+      <div id="mouse-div" className="flex flex-col w-full justify-center items-center">
         <motion.div
           animate={{
             opacity: 0,
@@ -124,7 +124,7 @@ function App() {
             duration: 0.5,
           }}
           whileHover={{
-            opacity: 0.3,
+            opacity: 1,
           }}
         >
           <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
@@ -133,7 +133,7 @@ function App() {
             className="relative my-40 w-fit flex flex-col justify-center items-center p-20"
           >
             <div
-              className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 mb-5"
+              className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center"
               id="mouse"
             >
               <motion.div
@@ -145,7 +145,7 @@ function App() {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-black mb-1 absolute"
+                className="w-3 h-3 rounded-full bg-black items-center justify-center"
               />
             </div>
             <p className="text-xl font-medium">
