@@ -38,11 +38,11 @@
 }
 
 html {
-  font-size: 2.25vh;
+  font-size: 1.5vh;
 }
 
 #mouse {
-  border: solid 2px black;
+  border: solid 3px black;
   /* width: 24px;
   height: 48px;
   border-radius: 2xlarge; */
@@ -65,6 +65,13 @@ html {
   grid-gap: 4px;
 }
 
+#experience-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4px;
+}
+
 #typewriter{
   white-space: normal;
 }
@@ -75,7 +82,7 @@ html {
   }
 
   #mouse {
-    border: solid 3px black;
+    border: solid 5px black;
     /* width: 24px;
     height: 48px;
     border-radius: 2xlarge; */
@@ -101,6 +108,8 @@ html {
   #typewriter{
     white-space: normal;
   }
+
+  
 
   
 }

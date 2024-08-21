@@ -138,7 +138,7 @@ function App() {
             >
               <motion.div
                 animate={{
-                  y: [0, window.innerHeight * 0.05, 0],
+                  y: [0, window.innerHeight * 0.045, 0],
                 }}
                 transition={{
                   duration: 2,
