@@ -149,7 +149,7 @@ function App() {
                 id = "mouse-ball"
               />
             </div>
-            <p className="text-xl font-medium">
+            <p className="text-lg font-medium">
               Scroll down to learn more about me.
             </p>
           </div></Link>
@@ -159,9 +159,9 @@ function App() {
         <section>
           <div className="flex flex-col" id="about">
             <div className="flex flex-col items-center">
-              <h2 className="text-6xl font-bold pb-6 w-10/12">About Me:</h2>
+              <h2 className="text-5xl font-bold pb-6 w-10/12">About Me:</h2>
               <hr className="border-2 border-neutral-300 w-10/12"></hr>
-              <p className="text-2xl text-left mt-4 w-10/12 ">
+              <p className="text-lg text-left mt-4 w-10/12 ">
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
@@ -191,7 +191,7 @@ function App() {
         <section>
           <div className="flex flex-col mt-20">
             <div id="experience" className="flex flex-col items-center ">
-              <h2 className="text-6xl mb-10 font-bold w-10/12">Experience:</h2>
+              <h2 className="text-5xl mb-10 font-bold w-10/12">Experience:</h2>
               <hr className="border-2 border-neutral-300 w-10/12"></hr>
               
               <div
@@ -244,7 +244,7 @@ function App() {
         <section>
           <div className="flex flex-col mt-20 w-full">
               <div id="projects" className="flex flex-col items-center">
-              <h2 className="text-6xl mb-10 font-bold w-10/12">Projects:</h2>
+              <h2 className="text-5xl mb-10 font-bold w-10/12">Projects:</h2>
               <hr className="border-2 border-neutral-300 w-10/12"></hr>
               <div
                 className="grid grid-cols-3 grid-rows-2 gap-4 mt-4 w-10/12"
