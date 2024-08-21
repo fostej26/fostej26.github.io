@@ -25,11 +25,11 @@ function App() {
   return (
     <BrowserRouter>
     <main>
-      <div id="nav" className="w-full fixed top-0 left-0 z-10">
+      <div id="nav" className="w-full fixed top-0 left-0 z-10 h-fit">
         <div className="p-4 flex justify-between items-center">
           <div className="flex justify-between w-1/6">
             <Link to="name" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
-              <span
+              <span 
                 id="gradient-text"
                 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500"
               >
@@ -98,16 +98,16 @@ function App() {
         id="hero"
         className="flex flex-col items-center justify-center"
       >
-        <h1 id="name" className="text-8xl font-bold text-left my-12 w-10/12">
+        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
           <span
             id="gradient-text"
-            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500"
+            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500 whitespace-nowrap"
           >
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        <h3 id="typewriter" className="text-5xl font-medium text-left whitespace-nowrap w-10/12">
+        <h3 id="typewriter" className="text-4xl font-medium text-left whitespace-nowrap w-10/12">
           <span>{text}</span>
           <span>
             <Cursor />
@@ -133,19 +133,20 @@ function App() {
             className="relative my-40 w-fit flex flex-col justify-center items-center p-20"
           >
             <div
-              className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center"
+              className="w-[5vh] h-[9vh] rounded-3xl border-4 border-secondary flex justify-center items-center pb-8 mb-6"
               id="mouse"
             >
               <motion.div
                 animate={{
-                  y: [0, 30, 0],
+                  y: [0, window.innerHeight * 0.05, 0],
                 }}
                 transition={{
                   duration: 2,
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-black items-center justify-center"
+                className="w-3 h-3 rounded-full bg-black"
+                id = "mouse-ball"
               />
             </div>
             <p className="text-xl font-medium">
