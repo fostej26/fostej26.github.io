@@ -107,14 +107,13 @@ function App() {
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        <div className="w-10/12">
-        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto">
+        
+        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12">
           <span>{text}</span>
           <span>
             <Cursor />
           </span>
         </h3>
-        </div>
       </div>
       
       <div id="mouse-div" className="flex flex-col w-full justify-center items-center">
