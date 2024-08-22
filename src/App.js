@@ -11,8 +11,7 @@ function App() {
     words: [
       "I am a software developer.",
       "I study mechatronics engineering.",
-      "I am an intern at L3Harris Technologies.",
-      "I love learning new things.",
+      "I love creating new things.",
     ],
     loop: true,
     typeSpeed: 80,
