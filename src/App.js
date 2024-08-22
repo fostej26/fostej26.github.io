@@ -10,7 +10,7 @@ function App() {
   const [text] = useTypewriter({
     words: [
       "I am a software developer.",
-      "I study mechatronics engineering at McMaster University.",
+      "I study mechatronics engineering.",
       "I am an intern at L3Harris Technologies.",
       "I love learning new things.",
     ],
@@ -161,7 +161,7 @@ function App() {
             <div className="flex flex-col items-center">
               <h2 className="text-5xl font-bold pb-6 w-11/12">About Me:</h2>
               <hr className="border-2 border-neutral-300 w-11/12"></hr>
-              <p className="text-lg text-left mt-4 w-11/12 ">
+              <p className="text-xl text-left mt-4 w-11/12 ">
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
@@ -211,25 +211,25 @@ function App() {
                       alt="L3Harris Technologies Logo"
                     />
                   </a>
-                  <h3 className="text-xl font-medium pt-0 pl-10">
+                  <h3 className="text-2xl font-medium pt-0 pl-10">
                     Manufacturing Engineering  Co-op: May 2024 - August 2024
                   </h3>
                   <br />
                   <ul className="pl-20">
-                    <li className="list-disc">
+                    <li className="list-disc text-xl">
                       Developed an internal web application to monitor and display
                       software and firmware module activity.
                       Implemented for a team of 100+ technicians to use, 
                       reducing manual labor from 15min per unit to 1min per unit.
                     </li>
                     <br />
-                    <li className="list-disc">
+                    <li className="list-disc text-xl">
                       Automated several test processes to retrieve, analyze, and
                       store calibration values from products saving $10,000+ in
                       prevented non-conformance errors.
                     </li>
                     <br />
-                    <li className="list-disc">
+                    <li className="list-disc text-xl">
                       Implemented a tooling management system for a
                       lab of 100+ manufacturing technicians using housing
                       assemblies designed in SOLIDWORKS.
@@ -264,10 +264,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     onTime
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     A python program that provides users with an SMS containing
                     the optimal time of departure for events logged in their
                     Google Calendar based on the current weather conditions and
@@ -289,10 +289,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Spinnick SumoBot
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     An automated robot designed to compete in the annual SumoBot
                     competition at McMaster University. Perceives the
                     environment using ultrasonic and color sensors and was
@@ -315,10 +315,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     AllergyPal
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     A web application that allows users input a list of food
                     sensitivities and take photos of meals they are unsure
                     about. Using a machine learning model, the app will detect
@@ -341,10 +341,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Portfolio Website
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     A react.js website used to display my resume, projects, and
                     contact information.
                   </p>
@@ -364,10 +364,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Sparce Matrix Solver
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     Wrote a C program to read a text file containing a
                     compressed a n by n sparse matrix, expand the matrix, and
                     find the solution to the matrix to the e-16th degree
@@ -389,10 +389,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Freestanding Solar Carport
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     Designed a freestanding solar carport to be installed in a
                     residential area. The carport was designed to be modular and
                     scalable to fit the needs of the customer.
