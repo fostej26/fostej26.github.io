@@ -96,9 +96,9 @@ function App() {
       </div>
       <div
         id="hero"
-        className="flex flex-col items-center justify-center relative"
+        className="flex flex-col items-center justify-center"
       >
-        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12 absolute">
+        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
           <span
             id="gradient-text"
@@ -107,12 +107,14 @@ function App() {
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        <h3 id="typewriter" className="text-4xl font-medium text-left whitespace-nowrap w-10/12 absolute mt-32">
+        <div className="w-10/12">
+        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto">
           <span>{text}</span>
           <span>
             <Cursor />
           </span>
         </h3>
+        </div>
       </div>
       
       <div id="mouse-div" className="flex flex-col w-full justify-center items-center">

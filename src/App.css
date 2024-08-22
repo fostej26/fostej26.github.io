@@ -74,7 +74,7 @@ html {
 
 #typewriter{
   white-space: normal;
-  padding-top: 72px;
+  margin: 2vh;
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -82,11 +82,8 @@ html {
     font-size: 2.25vh;
   }
 
-  #mouse {
-    border: solid 5px black;
-    /* width: 24px;
-    height: 48px;
-    border-radius: 2xlarge; */
+  #mouse-div {
+    opacity: 0;
   }
 
   #hero{
@@ -108,7 +105,7 @@ html {
 
   #typewriter{
     white-space: normal;
-    margin-top: 84px;
+    /* margin-top: 84px; */
   }
 
   #experience-container{
