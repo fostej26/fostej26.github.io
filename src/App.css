@@ -74,7 +74,7 @@ html {
 
 #typewriter{
   white-space: normal;
-  margin: 1.5vh;
+  margin: 2vh;
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -84,7 +84,6 @@ html {
 
   #mouse-div {
     opacity: 0;
-    pointer-events: none;
   }
 
   #hero{
