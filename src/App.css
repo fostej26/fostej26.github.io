@@ -74,6 +74,7 @@ html {
 
 #typewriter{
   white-space: normal;
+  padding-top: 72px;
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
@@ -107,6 +108,7 @@ html {
 
   #typewriter{
     white-space: normal;
+    margin-top: 72px;
   }
 
   #experience-container{
