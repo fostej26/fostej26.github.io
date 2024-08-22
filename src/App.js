@@ -102,13 +102,13 @@ function App() {
           Hi, I'm{" "}
           <span
             id="gradient-text"
-            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500"
+            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500 whitespace-nowrap"
           >
             &lt;Jacob Foster&gt;
           </span>
         </h1>
         
-        <h3 id="typewriter" className="text-4xl font-medium h-auto">
+        <h3 id="typewriter" className="text-4xl font-medium h-auto text-left">
           <span>{text}</span>
           <span>
             <Cursor />
