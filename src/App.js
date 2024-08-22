@@ -96,13 +96,13 @@ function App() {
       </div>
       <div
         id="hero"
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-center justify-center relative"
       >
         <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
           <span
             id="gradient-text"
-            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500 whitespace-nowrap"
+            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500 whitespace-nowrap absolute"
           >
             &lt;Jacob Foster&gt;
           </span>

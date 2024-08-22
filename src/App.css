@@ -73,6 +73,7 @@ html {
 }
 
 #typewriter{
+  white-space: normal;
   margin: 1.5vh;
 }
 
@@ -105,6 +106,7 @@ html {
 
   #typewriter{
     white-space: normal;
+    /* margin-top: 84px; */
   }
 
   #experience-container{
