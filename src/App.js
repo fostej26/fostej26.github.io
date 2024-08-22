@@ -108,7 +108,7 @@ function App() {
           </span>
         </h1>
         
-        <h3 id="typewriter" className="text-4xl font-medium h-auto text-left">
+        <h3 id="typewriter" className="text-4xl font-medium h-auto">
           <span>{text}</span>
           <span>
             <Cursor />
