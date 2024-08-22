@@ -10,7 +10,7 @@ function App() {
   const [text] = useTypewriter({
     words: [
       "I am a software developer.",
-      "I study mechatronics engineering at McMaster University.",
+      "I study mechatronics engineering.",
       "I am an intern at L3Harris Technologies.",
       "I love learning new things.",
     ],
@@ -28,7 +28,7 @@ function App() {
       <div id="nav" className="w-full fixed top-0 left-0 z-10 h-fit">
         <div className="p-4 flex justify-between items-center">
           <div className="flex justify-between w-1/6">
-            <Link to="name" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
+            <Link to="name" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer pb-2">
               <span 
                 id="gradient-text"
                 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500"
@@ -96,7 +96,7 @@ function App() {
       </div>
       <div
         id="hero"
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-center justify-center relative h-1/2"
       >
         <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
@@ -107,8 +107,7 @@ function App() {
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        
-        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12">
+        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12 left-0 top-0 ">
           <span>{text}</span>
           <span>
             <Cursor />
@@ -131,7 +130,7 @@ function App() {
           <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
           <div
             id="mouse-scroll-div"
-            className="my-40 w-fit flex flex-col justify-center items-center p-20"
+            className="my-40 w-fit flex flex-col justify-center items-center p-20 mb-20"
           >
             <div
               className="w-[5vh] h-[9vh] rounded-3xl border-4 border-secondary flex justify-center items-center pb-8 mb-6"
