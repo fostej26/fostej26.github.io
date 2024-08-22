@@ -98,7 +98,7 @@ function App() {
         id="hero"
         className="flex flex-col items-center justify-center relative"
       >
-        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12 absolute">
+        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
           <span
             id="gradient-text"
