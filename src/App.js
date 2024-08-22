@@ -79,16 +79,16 @@ function App() {
           </div>
 
           <div className="flex justify-end">
-            <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="mx-4 cursor-pointer">
+            <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="mx-4 cursor-pointer text-lg">
               About
             </Link>
-            <Link to="experience" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer">
+            <Link to="experience" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer text-lg">
               Experience
             </Link>
-            <Link to="projects" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer">
+            <Link to="projects" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer text-lg">
               Projects
             </Link>
-            <a href="mailto:fostej26@mcmaster.ca" className="mx-4">
+            <a href="mailto:fostej26@mcmaster.ca" className="mx-4 cursor-pointer text-lg">
               Contact
             </a>
           </div>
