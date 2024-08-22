@@ -96,7 +96,7 @@ function App() {
       </div>
       <div
         id="hero"
-        className="flex flex-col items-center justify-center relative"
+        className="flex flex-col items-center justify-center"
       >
         <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
@@ -108,7 +108,7 @@ function App() {
           </span>
         </h1>
         
-        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12 absolute">
+        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12">
           <span>{text}</span>
           <span>
             <Cursor />
