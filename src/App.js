@@ -130,7 +130,7 @@ function App() {
           <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
           <div
             id="mouse-scroll-div"
-            className="relative my-40 w-fit flex flex-col justify-center items-center p-20"
+            className="my-40 w-fit flex flex-col justify-center items-center p-20"
           >
             <div
               className="w-[5vh] h-[9vh] rounded-3xl border-4 border-secondary flex justify-center items-center pb-8 mb-6"
