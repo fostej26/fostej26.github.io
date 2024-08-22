@@ -107,7 +107,7 @@ function App() {
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        <h3 id="typewriter" className="text-4xl font-medium text-left whitespace-nowrap w-10/12">
+        <h3 id="typewriter" className="text-4xl font-medium text-left whitespace-nowrap w-10/12 absolute">
           <span>{text}</span>
           <span>
             <Cursor />
