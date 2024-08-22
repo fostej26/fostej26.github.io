@@ -10,7 +10,7 @@ function App() {
   const [text] = useTypewriter({
     words: [
       "I am a software developer.",
-      "I study mechatronics engineering.",
+      "I study mechatronics engineering at McMaster University.",
       "I am an intern at L3Harris Technologies.",
       "I love learning new things.",
     ],
@@ -98,7 +98,7 @@ function App() {
         id="hero"
         className="flex flex-col items-center justify-center relative h-1/2"
       >
-        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
+        <h1 id="name" className="text-7xl font-bold text-left my-12 w-11/12">
           Hi, I'm{" "}
           <span
             id="gradient-text"
@@ -107,7 +107,7 @@ function App() {
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12 left-0 top-0 ">
+        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-11/12 left-0 top-0 ">
           <span>{text}</span>
           <span>
             <Cursor />
@@ -159,9 +159,9 @@ function App() {
         <section>
           <div className="flex flex-col" id="about">
             <div className="flex flex-col items-center">
-              <h2 className="text-5xl font-bold pb-6 w-10/12">About Me:</h2>
-              <hr className="border-2 border-neutral-300 w-10/12"></hr>
-              <p className="text-lg text-left mt-4 w-10/12 ">
+              <h2 className="text-5xl font-bold pb-6 w-11/12">About Me:</h2>
+              <hr className="border-2 border-neutral-300 w-11/12"></hr>
+              <p className="text-lg text-left mt-4 w-11/12 ">
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
@@ -191,11 +191,11 @@ function App() {
         <section>
           <div className="flex flex-col mt-20">
             <div id="experience" className="flex flex-col items-center ">
-              <h2 className="text-5xl mb-10 font-bold w-10/12">Experience:</h2>
-              <hr className="border-2 border-neutral-300 w-10/12"></hr>
+              <h2 className="text-5xl mb-10 font-bold w-11/12">Experience:</h2>
+              <hr className="border-2 border-neutral-300 w-11/12"></hr>
               
               <div
-                className="grid grid-cols-2 grid-rows-1 gap-4 mt-4 w-10/12"
+                className="grid grid-cols-2 grid-rows-1 gap-4 mt-4 w-11/12"
                 id="experience-container"
               >
                 
@@ -244,10 +244,10 @@ function App() {
         <section>
           <div className="flex flex-col mt-20 w-full">
               <div id="projects" className="flex flex-col items-center">
-              <h2 className="text-5xl mb-10 font-bold w-10/12">Projects:</h2>
-              <hr className="border-2 border-neutral-300 w-10/12"></hr>
+              <h2 className="text-5xl mb-10 font-bold w-11/12">Projects:</h2>
+              <hr className="border-2 border-neutral-300 w-11/12"></hr>
               <div
-                className="grid grid-cols-3 grid-rows-2 gap-4 mt-4 w-10/12"
+                className="grid grid-cols-3 grid-rows-2 gap-4 mt-4 w-11/12"
                 id="projects-grid"
               >
                 <div className="w-full border-2 border-neutral-300 rounded-lg p-10 ">
