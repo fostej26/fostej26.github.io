@@ -148,6 +148,10 @@ html {
     grid-template-rows: auto;
     grid-gap: 4px;
   }
+
+  #mouse-div {
+    opacity: 0;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1299px){
