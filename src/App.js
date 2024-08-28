@@ -223,7 +223,7 @@ function App() {
                     </li>
                     <br />
                     <li className="list-disc text-xl">
-                      Automated several test processes to retrieve, analyze, and
+                      Automated several test processes using C# to retrieve, analyze, and
                       store calibration values from products saving $10,000+ in
                       prevented non-conformance errors.
                     </li>
