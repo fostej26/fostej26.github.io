@@ -303,7 +303,7 @@ function App() {
                 <div className="w-full border-2 border-neutral-300 rounded-lg p-10">
                   <div className="flex justify-center">
                     <a
-                      href="https://github.com/fostej26/onTime/tree/main"
+                      href="https://github.com/Vineet0708/AllergenFriend-"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -322,7 +322,7 @@ function App() {
                     sensitivities and take photos of meals they are unsure
                     about. Using a machine learning model, the app will detect
                     the dish and cross-reference the ingredients with the user's
-                    sensitivities.
+                    sensitivities. Currently undergoing improvement.
                   </p>
                 </div>
 
