@@ -58,7 +58,7 @@ function App() {
             </a>
 
             <a
-              href="/Jacob_Foster_Resume.pdf"
+              href="/Jacob Foster Resume Fall 2024.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -164,21 +164,20 @@ function App() {
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
-                 I just finished my second year of mechatronics
-                engineering at McMaster University in Hamilton, ON and am taking
-                a break from my studies to pursue a co-op position at L3Harris
-                Technologies as a manufacturing software development intern.
+                I just started my third year of mechatronics
+                engineering at McMaster University in Hamilton, ON and just 
+                finished a co-op position at L3Harris
+                Technologies as a manufacturing intern focusing on automation development.
                 Through my school and work experiences, I have discovered a
                 passion for finding solutions to engaging problems in all facets
                 of engineering.
                 <br />
                 <br />
-                I'm currently taking this time to focus on developing new skills
+                I'm currently focusing on developing new skills
                 surrounding my interests in software development, robotics, and
                 performance engineering. I plan to continue to create
-                captivating projects and develop my skills before I return to
-                school to finish my degree, and I'm excited to see where my
-                journey takes me.
+                captivating projects and develop my skills, and I'm excited 
+                to see where my journey takes me.
                 <br />
                 <br />
                 When I'm not working on projects or studying, you can find me at
@@ -249,6 +248,34 @@ function App() {
                 className="grid grid-cols-3 grid-rows-2 gap-4 mt-4 w-10/12"
                 id="projects-grid"
               >
+
+<div className="w-full border-2 border-neutral-300 rounded-lg p-10">
+                  <div className="flex justify-center">
+                    <a
+                      href="https://github.com/fostej26/AllergyPal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={require("./assets/allergypal.jpg")}
+                        className="w-48 h-48 rounded-lg"
+                        alt="team photo from sumobot competition"
+                      />
+                    </a>
+                  </div>
+                  <h3 className="text-center text-2xl font-semibold mt-4">
+                    AllergyPal
+                  </h3>
+                  <p className="text-lg font-normal mt-2 text-center">
+                    A web application that allows users input a list of food
+                    sensitivities and take photos of meals that pose a dietary risk. 
+                    Using a machine learning model, the app detects
+                    the dish and cross-references the ingredients with the user's
+                    sensitivities.
+                  </p>
+                </div>
+
+
                 <div className="w-full border-2 border-neutral-300 rounded-lg p-10 ">
                   <div className="flex justify-center">
                     <a
@@ -300,31 +327,6 @@ function App() {
                   </p>
                 </div>
 
-                <div className="w-full border-2 border-neutral-300 rounded-lg p-10">
-                  <div className="flex justify-center">
-                    <a
-                      href="https://github.com/Vineet0708/AllergenFriend-"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={require("./assets/allergypal.jpg")}
-                        className="w-48 h-48 rounded-lg"
-                        alt="team photo from sumobot competition"
-                      />
-                    </a>
-                  </div>
-                  <h3 className="text-center text-2xl font-semibold mt-4">
-                    AllergyPal
-                  </h3>
-                  <p className="text-lg font-normal mt-2 text-center">
-                    A web application that allows users input a list of food
-                    sensitivities and take photos of meals they are unsure
-                    about. Using a machine learning model, the app will detect
-                    the dish and cross-reference the ingredients with the user's
-                    sensitivities. Currently undergoing improvement.
-                  </p>
-                </div>
 
                 <div className="w-full border-2 border-neutral-300 rounded-lg p-10">
                   <div className="flex justify-center">
@@ -432,7 +434,7 @@ function App() {
               </a>
 
               <a
-                href="/Jacob_Foster_Resume.pdf"
+                href="/Jacob Foster Resume Fall 2024.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
