@@ -3,16 +3,15 @@ import "./App.css";
 import { motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import {Link} from "react-scroll";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter, Router, Switch } from "react-router-dom";
 
 function App() {
   
   const [text] = useTypewriter({
     words: [
       "I am a software developer.",
-      "I study mechatronics engineering at McMaster University.",
-      "I am an intern at L3Harris Technologies.",
-      "I love learning new things.",
+      "I study mechatronics engineering.",
+      "I love creating new things.",
     ],
     loop: true,
     typeSpeed: 80,
@@ -23,13 +22,13 @@ function App() {
   
 
   return (
-    <HashRouter>
+    <BrowserRouter>
     <main>
-      <div id="nav" className="w-full fixed top-0 left-0 z-10">
+      <div id="nav" className="w-full fixed top-0 left-0 z-10 h-fit">
         <div className="p-4 flex justify-between items-center">
           <div className="flex justify-between w-1/6">
-            <Link to="name" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
-              <span
+            <Link to="name" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer pb-2">
+              <span 
                 id="gradient-text"
                 className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500"
               >
@@ -79,16 +78,16 @@ function App() {
           </div>
 
           <div className="flex justify-end">
-            <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="mx-4 cursor-pointer">
+            <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="mx-4 cursor-pointer text-lg">
               About
             </Link>
-            <Link to="experience" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer">
+            <Link to="experience" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer text-lg">
               Experience
             </Link>
-            <Link to="projects" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer">
+            <Link to="projects" spy={true} smooth={true} duration={500} offset={-50} className="mx-4 cursor-pointer text-lg">
               Projects
             </Link>
-            <a href="mailto:fostej26@mcmaster.ca" className="mx-4">
+            <a href="mailto:fostej26@mcmaster.ca" className="mx-4 cursor-pointer text-lg">
               Contact
             </a>
           </div>
@@ -96,18 +95,18 @@ function App() {
       </div>
       <div
         id="hero"
-        className="flex flex-col items-center justify-center"
+        className="flex flex-col items-center justify-center relative h-1/2"
       >
-        <h1 id="name" className="text-8xl font-bold text-left my-12 w-10/12">
+        <h1 id="name" className="text-7xl font-bold text-left my-12 w-10/12">
           Hi, I'm{" "}
           <span
             id="gradient-text"
-            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500"
+            className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-400 to-orange-500 whitespace-nowrap"
           >
             &lt;Jacob Foster&gt;
           </span>
         </h1>
-        <h3 id="typewriter" className="text-5xl font-medium text-left whitespace-nowrap w-10/12">
+        <h3 id="typewriter" className="text-4xl font-medium whitespace-nowrap h-auto w-10/12 left-0 top-0 ">
           <span>{text}</span>
           <span>
             <Cursor />
@@ -115,7 +114,7 @@ function App() {
         </h3>
       </div>
       
-      <div className="flex flex-col w-full justify-center items-center">
+      <div id="mouse-div" className="flex flex-col w-full justify-center items-center">
         <motion.div
           animate={{
             opacity: 0,
@@ -124,31 +123,32 @@ function App() {
             duration: 0.5,
           }}
           whileHover={{
-            opacity: 0.3,
+            opacity: 1,
           }}
         >
           <Link to="about" spy={true} smooth={true} duration={500} offset={-100} className="text-2xl font-bold cursor-pointer">
           <div
             id="mouse-scroll-div"
-            className="relative my-40 w-fit flex flex-col justify-center items-center p-20"
+            className="my-40 w-fit flex flex-col justify-center items-center p-20 mb-20"
           >
             <div
-              className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 mb-5"
+              className="w-[5vh] h-[9vh] rounded-3xl border-4 border-secondary flex justify-center items-center pb-8 mb-6"
               id="mouse"
             >
               <motion.div
                 animate={{
-                  y: [0, 30, 0],
+                  y: [0, window.innerHeight * 0.045, 0],
                 }}
                 transition={{
                   duration: 2,
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-black mb-1 absolute"
+                className="w-3 h-3 rounded-full bg-black"
+                id = "mouse-ball"
               />
             </div>
-            <p className="text-xl font-medium">
+            <p className="text-lg font-medium">
               Scroll down to learn more about me.
             </p>
           </div></Link>
@@ -158,27 +158,26 @@ function App() {
         <section>
           <div className="flex flex-col" id="about">
             <div className="flex flex-col items-center">
-              <h2 className="text-6xl font-bold pb-6 w-10/12">About Me:</h2>
+              <h2 className="text-5xl font-bold pb-6 w-10/12">About Me:</h2>
               <hr className="border-2 border-neutral-300 w-10/12"></hr>
-              <p className="text-2xl text-left mt-4 w-10/12 ">
+              <p className="text-xl text-left mt-4 w-10/12 ">
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
-                 I just finished my second year of mechatronics
-                engineering at McMaster University in Hamilton, ON and am taking
-                a break from my studies to pursue a co-op position at L3Harris
-                Technologies as a manufacturing software development intern.
+                I just started my third year of mechatronics
+                engineering at McMaster University in Hamilton, ON and just 
+                finished a co-op position at L3Harris
+                Technologies as a manufacturing intern focusing on automation development.
                 Through my school and work experiences, I have discovered a
                 passion for finding solutions to engaging problems in all facets
                 of engineering.
                 <br />
                 <br />
-                I'm currently taking this time to focus on developing new skills
+                I'm currently focusing on developing new skills
                 surrounding my interests in software development, robotics, and
                 performance engineering. I plan to continue to create
-                captivating projects and develop my skills before I return to
-                school to finish my degree, and I'm excited to see where my
-                journey takes me.
+                captivating projects and develop my skills, and I'm excited 
+                to see where my journey takes me.
                 <br />
                 <br />
                 When I'm not working on projects or studying, you can find me at
@@ -190,7 +189,7 @@ function App() {
         <section>
           <div className="flex flex-col mt-20">
             <div id="experience" className="flex flex-col items-center ">
-              <h2 className="text-6xl mb-10 font-bold w-10/12">Experience:</h2>
+              <h2 className="text-5xl mb-10 font-bold w-10/12">Experience:</h2>
               <hr className="border-2 border-neutral-300 w-10/12"></hr>
               
               <div
@@ -210,25 +209,25 @@ function App() {
                       alt="L3Harris Technologies Logo"
                     />
                   </a>
-                  <h3 className="text-xl font-medium pt-0 pl-10">
+                  <h3 className="text-2xl font-medium pt-0 pl-10">
                     Manufacturing Engineering  Co-op: May 2024 - August 2024
                   </h3>
                   <br />
                   <ul className="pl-20">
-                    <li className="list-disc">
+                    <li className="list-disc text-xl">
                       Developed an internal web application to monitor and display
                       software and firmware module activity.
                       Implemented for a team of 100+ technicians to use, 
-                      reducing manual labor from 15min to 1min per unit.
+                      reducing manual labor from 15min per unit to 1min per unit.
                     </li>
                     <br />
-                    <li className="list-disc">
-                      Automated several test processes to retrieve, analyze, and
+                    <li className="list-disc text-xl">
+                      Automated several test processes using C# to retrieve, analyze, and
                       store calibration values from products saving $10,000+ in
                       prevented non-conformance errors.
                     </li>
                     <br />
-                    <li className="list-disc">
+                    <li className="list-disc text-xl">
                       Implemented a tooling management system for a
                       lab of 100+ manufacturing technicians using housing
                       assemblies designed in SOLIDWORKS.
@@ -243,12 +242,40 @@ function App() {
         <section>
           <div className="flex flex-col mt-20 w-full">
               <div id="projects" className="flex flex-col items-center">
-              <h2 className="text-6xl mb-10 font-bold w-10/12">Projects:</h2>
+              <h2 className="text-5xl mb-10 font-bold w-10/12">Projects:</h2>
               <hr className="border-2 border-neutral-300 w-10/12"></hr>
               <div
                 className="grid grid-cols-3 grid-rows-2 gap-4 mt-4 w-10/12"
                 id="projects-grid"
               >
+
+<div className="w-full border-2 border-neutral-300 rounded-lg p-10">
+                  <div className="flex justify-center">
+                    <a
+                      href="https://github.com/fostej26/AllergyPal"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={require("./assets/allergypal.jpg")}
+                        className="w-48 h-48 rounded-lg"
+                        alt="team photo from sumobot competition"
+                      />
+                    </a>
+                  </div>
+                  <h3 className="text-center text-2xl font-semibold mt-4">
+                    AllergyPal
+                  </h3>
+                  <p className="text-lg font-normal mt-2 text-center">
+                    A web application that allows users input a list of food
+                    sensitivities and take photos of meals that pose a dietary risk. 
+                    Using a machine learning model, the app detects
+                    the dish and cross-references the ingredients with the user's
+                    sensitivities.
+                  </p>
+                </div>
+
+
                 <div className="w-full border-2 border-neutral-300 rounded-lg p-10 ">
                   <div className="flex justify-center">
                     <a
@@ -263,10 +290,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     onTime
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     A python program that provides users with an SMS containing
                     the optimal time of departure for events logged in their
                     Google Calendar based on the current weather conditions and
@@ -288,10 +315,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Spinnick SumoBot
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     An automated robot designed to compete in the annual SumoBot
                     competition at McMaster University. Perceives the
                     environment using ultrasonic and color sensors and was
@@ -300,31 +327,6 @@ function App() {
                   </p>
                 </div>
 
-                <div className="w-full border-2 border-neutral-300 rounded-lg p-10">
-                  <div className="flex justify-center">
-                    <a
-                      href="https://github.com/fostej26/onTime/tree/main"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={require("./assets/allergypal.jpg")}
-                        className="w-48 h-48 rounded-lg"
-                        alt="team photo from sumobot competition"
-                      />
-                    </a>
-                  </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
-                    AllergyPal
-                  </h3>
-                  <p className="text-md font-normal mt-2 text-center">
-                    A web application that allows users input a list of food
-                    sensitivities and take photos of meals they are unsure
-                    about. Using a machine learning model, the app will detect
-                    the dish and cross-reference the ingredients with the user's
-                    sensitivities.
-                  </p>
-                </div>
 
                 <div className="w-full border-2 border-neutral-300 rounded-lg p-10">
                   <div className="flex justify-center">
@@ -340,10 +342,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Portfolio Website
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     A react.js website used to display my resume, projects, and
                     contact information.
                   </p>
@@ -363,10 +365,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Sparce Matrix Solver
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     Wrote a C program to read a text file containing a
                     compressed a n by n sparse matrix, expand the matrix, and
                     find the solution to the matrix to the e-16th degree
@@ -388,10 +390,10 @@ function App() {
                       />
                     </a>
                   </div>
-                  <h3 className="text-center text-xl font-semibold mt-4">
+                  <h3 className="text-center text-2xl font-semibold mt-4">
                     Freestanding Solar Carport
                   </h3>
-                  <p className="text-md font-normal mt-2 text-center">
+                  <p className="text-lg font-normal mt-2 text-center">
                     Designed a freestanding solar carport to be installed in a
                     residential area. The carport was designed to be modular and
                     scalable to fit the needs of the customer.
@@ -432,7 +434,7 @@ function App() {
               </a>
 
               <a
-                href="/Jacob_Foster_Resume.pdf"
+                href="/Jacob Foster Resume Fall 2024.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -465,7 +467,7 @@ function App() {
       </footer>
       
     </main>
-    </HashRouter>
+    </BrowserRouter>
     
   );
   

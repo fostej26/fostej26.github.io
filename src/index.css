@@ -20,6 +20,10 @@ code {
   border: solid 5px black;
 }
 
+#mouse-div{
+  opacity: 0.3;
+}
+
 
 #scroll-text{
   opacity: 0;

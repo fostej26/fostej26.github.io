@@ -38,14 +38,11 @@
 }
 
 html {
-  font-size: 5px;
+  font-size: 1vh;
 }
 
 #mouse {
   border: solid 3px black;
-  width: 24px;
-  height: 48px;
-  border-radius: 2xlarge;
 }
 
 #hero{
@@ -65,16 +62,30 @@ html {
   grid-gap: 4px;
 }
 
-@media (min-width: 640px) {
+#experience-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4px;
+}
+
+#typewriter{
+  white-space: normal;
+  margin: 2vh;
+}
+
+
+@media (min-width: 640px) and (max-width: 767px) {
   html {
-    font-size: 7px;
+    font-size: 2.25vh;
   }
 
-  #mouse {
-    border: solid 3px black;
-    width: 24px;
-    height: 48px;
-    border-radius: 2xlarge;
+  #mouse{
+    opacity: 0;
+  }
+
+  #mouse-scroll-div{
+    opacity: 0;
   }
 
   #hero{
@@ -94,19 +105,33 @@ html {
     grid-gap: 4px;
   }
 
+  #typewriter{
+    white-space: normal;
+    /* margin-top: 84px; */
+  }
+
+  #experience-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 4px;
+}
+
   
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px){
   html {
-    font-size: 8px;
+    font-size: 2.25vh;
   }
 
   #mouse {
-    border: solid 3px black;
-    width: 28px;
+    border: solid 4px black;
+    /* width: 28px;
     height: 50px;
-    border-radius: 2xlarge;
+    border-radius: 3xlarge;
+    padding-bottom: 28px;
+    margin-bottom: 10px; */
   }
 
   #hero{
@@ -125,11 +150,15 @@ html {
     grid-template-rows: auto;
     grid-gap: 4px;
   }
+
+  #mouse-div {
+    opacity: 0;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1299px){
   html {
-    font-size: 11px;
+    font-size: 2.25vh;
   }
 
   #name{
@@ -138,9 +167,10 @@ html {
 
   #mouse {
     border: solid 4px black;
-    width: 32px;
+    /* width: 32px;
     height: 58px;
-    padding-left: 6px;
+    padding-bottom: 28px;
+    margin-bottom: 10px; */
   }
 
   #hero{
@@ -157,15 +187,18 @@ html {
   }
 }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1300px) and (max-width: 1719px){
     html {
-      font-size: 14px;
+      font-size: 2.25vh;
     }
 
     #mouse {
       border: solid 5px black;
-      width: 35px;
+      /* width: 35px;
       height: 64px;
+      padding-right: 5px;
+      padding-bottom: 26px;
+      margin-bottom: 10px; */
     }
 
     #hero{
@@ -186,16 +219,16 @@ html {
     }
 }
 
-@media (min-width: 1720px) {
+@media (min-width: 1720px) and (max-width: 2399px){
   html {
-    font-size: 16px;
+    font-size: 2.25vh;
   }
 
   #mouse {
-    border: solid 5px black;
-    width: 42px;
+    border: solid 7px black;
+    /* width: 42px;
     height: 72px;
-    padding-left: 8px;
+    padding-left: 8px; */
   }
 
   #hero{
@@ -217,15 +250,15 @@ html {
   }
 }
 
-@media (min-width: 2400px) {
+@media (min-width: 2400px) and (max-width: 2999px){
   html {
-    font-size: 22px;
+    font-size: 2.25vh;
   }
 
   #mouse {
-    border: solid 7px black;
-    width: 52px;
-    height: 90px;
+    border: solid 8px black;
+    /* width: 52px;
+    height: 90px; */
   }
 
   #hero{
@@ -249,13 +282,13 @@ html {
 
 @media (min-width: 3000px) {
   html {
-    font-size: 22px;
+    font-size: 2.25vh;
   }
 
   #mouse {
-    border: solid 7px black;
-    width: 56px;
-    height: 96px;
+    border: solid 8px black;
+    /* width: 56px;
+    height: 96px; */
   }
 
   #hero{
