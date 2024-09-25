@@ -59,7 +59,7 @@ function App() {
             </a>
 
             <a
-              href="/Jacob_Foster_Resume.pdf"
+              href="/JACOBFOSTER_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
