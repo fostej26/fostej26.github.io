@@ -58,7 +58,7 @@ function App() {
             </a>
 
             <a
-              href={require("./assets/Jacob-Foster-Resume-Nov2024.pdf")}
+              href={require("./assets/Jacob-Foster-Resume.pdf")}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -167,7 +167,7 @@ function App() {
                 I just finished my third year of mechatronics
                 engineering at McMaster University, and have just started an internship
                 as a Video Software Engineer at AMD. I've also previously worked as a
-                manufacturing automation intern at L3Harris Technologies.
+                Manufacturing Automation Intern at L3Harris Technologies.
                 Through my school and work experiences, I have discovered a
                 passion for finding solutions to engaging problems in all facets
                 of engineering.
@@ -179,8 +179,6 @@ function App() {
                 captivating projects and develop my skills, and I'm excited 
                 to see where my journey takes me.
                 <br />
-                <br />
-                When I'm not working on projects or studying, I enjoy snowboarding, playing soccer, and playing music on the guitar!
               </p>
             </div>
           </div>
@@ -195,6 +193,29 @@ function App() {
                 className="grid grid-cols-2 grid-rows-1 gap-4 mt-4 w-10/12"
                 id="experience-container"
               >
+
+<div className="p-10 pl-0 pt-0 pb-10 w-full border-2 border-neutral-300 rounded-lg">
+                  <a
+                    href="https://www.amd.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={require("./assets/amd.png")}
+                      className="w-40 h-40 ml-10"
+                      alt="L3Harris Technologies Logo"
+                    />
+                  </a>
+                  <h3 className="text-2xl font-medium pt-0 pl-10">
+                    Video Software Engineering Co-op: May 2025 - Present
+                  </h3>
+                  <br />
+                  <ul className="pl-20">
+                    <li className="list-disc text-xl">
+                      Resolve bugs related to AMD Radeon GPU and APU drivers.
+                    </li>
+                  </ul>
+                </div>
                 
                 <div className="p-10 pl-0 pt-0 pb-10 w-full border-2 border-neutral-300 rounded-lg">
                   <a
@@ -204,7 +225,7 @@ function App() {
                   >
                     <img
                       src={require("./assets/L3Harris_Technologies-Logo.png")}
-                      className="w-60 h-40"
+                      className="ml-5 w-60 h-40"
                       alt="L3Harris Technologies Logo"
                     />
                   </a>
@@ -242,7 +263,7 @@ function App() {
                   >
                     <img
                       src={require("./assets/solar_car.png")}
-                      className="w-36 h-36 object-contain mx-5 mb-4"
+                      className="w-36 h-36 object-contain mx-10 mb-4"
                       alt="McMaster Solar Car Logo"
                     />
                   </a>
@@ -252,12 +273,13 @@ function App() {
                   <br />
                   <ul className="pl-20">
                     <li className="list-disc text-xl">
+                      Create and display kinematic simulations using linear ODE solving methods.
+                    </li>
+                    <br/>
+                    <li className="list-disc text-xl">
                       Modularize and create documentation for algorithms used in race strategies codebase.
                     </li>
-                    <br />
-                    <li className="list-disc text-xl">
-                      Excited to learn and contribute more throughout the year!
-                    </li>
+                    
                   </ul>
                 </div>
 
@@ -462,7 +484,7 @@ function App() {
               </a>
 
               <a
-                href="/Jacob Foster Resume Fall 2024.pdf"
+                href="./assets/Jacob-Foster-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -487,7 +509,7 @@ function App() {
             </div>
             <div className="flex flex-cols">
                 <p className="text-center text-lg font-medium mt-8">
-                  Copyright &copy; Jacob Foster 2024
+                  Copyright &copy; Jacob Foster 2025
                 </p>
             </div>
           </div>
