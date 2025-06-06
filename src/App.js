@@ -164,10 +164,10 @@ function App() {
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
-                I just started my third year of mechatronics
-                engineering at McMaster University in Hamilton, ON and just 
-                finished a co-op position at L3Harris
-                Technologies as a manufacturing intern focusing on automation development.
+                I just finished my third year of mechatronics
+                engineering at McMaster University, and have just started an internship
+                as a Video Software Engineer at AMD. I've also previously worked as a
+                manufacturing automation intern at L3Harris Technologies.
                 Through my school and work experiences, I have discovered a
                 passion for finding solutions to engaging problems in all facets
                 of engineering.
