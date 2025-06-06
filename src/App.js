@@ -235,7 +235,7 @@ function App() {
                   <br />
                   <ul className="pl-20">
                     <li className="list-disc text-xl">
-                      Developed an internal web application to monitor and display
+                      Developed an internal windows application to monitor and display
                       software and firmware module activity.
                       Implemented for a team of 100+ technicians to use, 
                       reducing manual labor from 15min per unit to 1min per unit.
