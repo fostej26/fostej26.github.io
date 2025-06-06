@@ -58,7 +58,7 @@ function App() {
             </a>
 
             <a
-              href="/Jacob Foster Resume Fall 2024.pdf"
+              href={require("./assets/Jacob-Foster-Resume-Nov2024.pdf")}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -180,8 +180,7 @@ function App() {
                 to see where my journey takes me.
                 <br />
                 <br />
-                When I'm not working on projects or studying, you can find me at
-                the gym, on the field playing soccer, or playing the guitar.
+                When I'm not working on projects or studying, I enjoy snowboarding, playing soccer, and playing music on the guitar!
               </p>
             </div>
           </div>
@@ -234,6 +233,35 @@ function App() {
                     </li>
                   </ul>
                 </div>
+
+                <div className="p-10 pl-0 pt-0 pb-10 w-full border-2 border-neutral-300 rounded-lg">
+                  <a
+                    href="https://www.mcmastersolarcar.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={require("./assets/solar_car.png")}
+                      className="w-36 h-36 object-contain mx-5 mb-4"
+                      alt="McMaster Solar Car Logo"
+                    />
+                  </a>
+                  <h3 className="text-2xl font-medium pt-0 pl-10">
+                    Algorithms Developer: October 2024 - Present
+                  </h3>
+                  <br />
+                  <ul className="pl-20">
+                    <li className="list-disc text-xl">
+                      Modularize and create documentation for algorithms used in race strategies codebase.
+                    </li>
+                    <br />
+                    <li className="list-disc text-xl">
+                      Excited to learn and contribute more throughout the year!
+                    </li>
+                  </ul>
+                </div>
+
+
               </div>
             </div>
           </div>
