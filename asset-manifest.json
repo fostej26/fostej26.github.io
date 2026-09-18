@@ -1,24 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc615f48.css",
-    "main.js": "/static/js/main.fd3b8702.js",
-    "static/js/453.322ab898.chunk.js": "/static/js/453.322ab898.chunk.js",
-    "static/media/sumo.PNG": "/static/media/sumo.6f63e179389094907bbc.PNG",
-    "static/media/carport.png": "/static/media/carport.b9a8d9b8cf30390c2329.png",
-    "static/media/Jacob-Foster-Resume.pdf": "/static/media/Jacob-Foster-Resume.60509e632031c197115b.pdf",
-    "static/media/onTime.jpg": "/static/media/onTime.682baf9ddbf408595762.jpg",
-    "static/media/allergypal.jpg": "/static/media/allergypal.f7299eccc2aaf81f0ff8.jpg",
-    "static/media/L3Harris_Technologies-Logo.png": "/static/media/L3Harris_Technologies-Logo.cc45afd6f4e9920f40b8.png",
-    "static/media/solar_car.png": "/static/media/solar_car.e28fcc449694562ee970.png",
-    "static/media/matrix.jpg": "/static/media/matrix.11798389491246be7b3e.jpg",
-    "static/media/website.PNG": "/static/media/website.3cade95bb1e833c45a34.PNG",
+    "main.css": "/static/css/main.3dedfe9b.css",
+    "main.js": "/static/js/main.c08b8127.js",
+    "static/media/Jacob-Foster-Resume.pdf": "/static/media/Jacob-Foster-Resume.dae38e439b0dda375619.pdf",
     "index.html": "/index.html",
-    "main.bc615f48.css.map": "/static/css/main.bc615f48.css.map",
-    "main.fd3b8702.js.map": "/static/js/main.fd3b8702.js.map",
-    "453.322ab898.chunk.js.map": "/static/js/453.322ab898.chunk.js.map"
+    "main.3dedfe9b.css.map": "/static/css/main.3dedfe9b.css.map",
+    "main.c08b8127.js.map": "/static/js/main.c08b8127.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc615f48.css",
-    "static/js/main.fd3b8702.js"
+    "static/css/main.3dedfe9b.css",
+    "static/js/main.c08b8127.js"
   ]
 }
