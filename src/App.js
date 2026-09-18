@@ -164,9 +164,9 @@ function App() {
                 <br/>
                 Hi I'm Jacob!
                 <br/><br/>
-                I just finished my third year of mechatronics
-                engineering at McMaster University, and have just started an internship
-                as a Video Software Engineer at AMD. I've also previously worked as a
+                I just started my fifth and final year of mechatronics
+                engineering at McMaster University, and have also recently finished a PEY internship
+                as a Video Decoding Software Engineer at AMD. I've also previously worked as a
                 Manufacturing Automation Intern at L3Harris Technologies.
                 Through my school and work experiences, I have discovered a
                 passion for finding solutions to engaging problems in all facets
@@ -207,12 +207,34 @@ function App() {
                     />
                   </a>
                   <h3 className="text-2xl font-medium pt-0 pl-10">
-                    Video Software Engineering Co-op: May 2025 - Present
+                    Video Decoding Software Engineer Co-op: May 2025 - August 2026
                   </h3>
                   <br />
                   <ul className="pl-20">
                     <li className="list-disc text-xl">
-                      Resolve bugs related to AMD Radeon GPU and APU drivers.
+                      Engineered software for compressing and decoding MJPEG video streams via DCT-based
+  decoding, enabling hardware acceleration for next-generation Windows GPU, APU, and console drivers across D3D11/12 decode paths.
+                    </li>
+                    <br />
+                    <li className="list-disc text-xl">
+                       Built a bitstream parser that walks JPEG marker structure, detects chroma subsampling, and reformats frames into
+  DXVA-compliant picture parameters and Huffman/quantization tables; enabling the team to validate hardware decoding for product bring-up.
+                    </li>
+                    <br />
+                    <li className="list-disc text-xl">
+                      Designed and built a Python web app that automates the end-to-end firmware submission pipeline,
+  unifying six previously manual stages and reducing submission time by 2.3x. The tool orchestrates remote
+  Linux test machines over SSH, drives Perforce and Git from a single interface,
+  auto-generates and cross-links pull requests across three downstream repositories, and integrates an AI coding agent
+  to resolve merge conflicts. Deployed to a team of 30+ developers.
+                    </li>
+                    <br />
+                    <li className="list-disc text-xl">
+                      Resolved a scheduler defect where all video decode jobs were incorrectly dispatched to the encoding engine; implemented codec-aware engine routing to direct workloads to the dedicated decode engine, with AV1 exempt and single-engine APU configurations handled separately, leveraging GPU decode affinity to defer engine assignment until hardware capabilities were known at runtime.
+                    </li>
+                    <br />
+                    <li className="list-disc text-xl">
+                      Diagnosed and resolved defects in Windows GPU/APU driver software and implemented features across the full driver stack, from kernel-level to user-level abstractions.
                     </li>
                   </ul>
                 </div>
@@ -243,7 +265,7 @@ function App() {
                     <br />
                     <li className="list-disc text-xl">
                       Automated several test processes using C# to retrieve, analyze, and
-                      store calibration values from products saving $10,000+ in
+                      store calibration values from products saving $100,000+ in
                       prevented non-conformance errors.
                     </li>
                     <br />
@@ -509,7 +531,7 @@ function App() {
             </div>
             <div className="flex flex-cols">
                 <p className="text-center text-lg font-medium mt-8">
-                  Copyright &copy; Jacob Foster 2025
+                  Copyright &copy; Jacob Foster 2026
                 </p>
             </div>
           </div>
