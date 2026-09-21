@@ -163,7 +163,6 @@ export function Contact() {
       </Reveal>
       <Reveal className="footer-meta">
         <Prompt cmd="type colophon.txt" />
-        <p className="dim">Built from scratch using React.js and TailwindCSS</p>
         <p className="dim">Copyright &copy; Jacob Foster 2026</p>
         <Prompt cmd="">
           <Cursor />

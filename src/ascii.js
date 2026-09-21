@@ -139,8 +139,15 @@ export const projectIcons = {
 `),
 };
 
+const today = new Date();
+const buildVersion = [
+  today.getFullYear(),
+  String(today.getMonth() + 1).padStart(2, "0"),
+  String(today.getDate()).padStart(2, "0"),
+].join(".");
+
 export const bootLines = [
-  "JF Windows [Version 2026.09.18]",
+  `JF Windows [Version ${buildVersion}]`,
   "(c) Jacob Foster. All rights reserved.",
   " ",
   "C:\\Users\\Jacob>portfolio.exe",
