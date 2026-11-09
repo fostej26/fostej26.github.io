@@ -402,8 +402,10 @@ kbd {
 }
 @media (min-width: 900px) {
   .about-grid {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 3rem;
+    grid-template-columns: minmax(0, 68ch) max-content;
+    justify-content: start;
+    align-items: center;
+    gap: 2.5rem;
   }
 }
 .about-body {
@@ -639,4 +641,14 @@ a:focus-visible {
   .crt {
     display: none;
   }
+}
+.figure-canvas.portrait {
+  height: auto;
+  width: max-content;
+  max-width: 100%;
+  overflow: visible;
+  font-size: clamp(0.4rem, 1vw, 0.7rem);
+  line-height: 1.15;
+  white-space: pre;
+  margin: 0;
 }

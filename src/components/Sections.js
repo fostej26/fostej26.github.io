@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { about, experience, projects, links } from "../data";
 import { sectionBanners, companyLogos, projectIcons, jfLogo } from "../ascii";
 import { Prompt, Cursor, Scramble, Reveal, HOME, TypedPrompt, StreamText } from "./primitives";
-import { AsciiFigure } from "./AsciiArt";
+import { AsciiPortrait } from "./AsciiArt";
 
 function SectionHeader({ id, cmd, path }) {
   return (
@@ -25,8 +25,8 @@ export function About() {
       <div className="about-grid">
         <StreamText paragraphs={about} start={typed} className="about-body" />
         <div className={`about-figure ${typed ? "about-figure--on" : ""}`}>
-          <AsciiFigure art="kickups" />
-          <span className="dim">me.obj</span>
+          <AsciiPortrait />
+          <span className="dim">pc.txt</span>
         </div>
       </div>
     </section>

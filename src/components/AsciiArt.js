@@ -368,6 +368,45 @@ export function AsciiFigure({ art = "kickups", cols = 44, rows = 24, className =
   );
 }
 
+const portrait = [
+  "          ,-------------------------------------------------,",
+  "         /                                                   \\",
+  "        +-----------------------------------------------------+",
+  "        |  .------------------------------------------------.  |",
+  "        |  | C:\\>welcome.bat                                |  |",
+  "        |  |                                                |  |",
+  "        |  |   ╦ ╔═╗ ╔═╗ ╔═╗ ╔╗                             |  |",
+  "        |  |   ║ ╠═╣ ║   ║ ║ ╠╩╗                            |  |",
+  "        |  | ╚═╝ ╩ ╩ ╚═╝ ╚═╝ ╚═╝                            |  |",
+  "        |  |                                                |  |",
+  "        |  | ╔═╗ ╔═╗ ╔═╗ ╔╦╗ ╔═╗ ╦═╗                        |  |",
+  "        |  | ╠╣  ║ ║ ╚═╗  ║  ╠╣  ╠╦╝                        |  |",
+  "        |  | ╩   ╚═╝ ╚═╝  ╩  ╚═╝ ╩╚═                        |  |",
+  "        |  |                                                |  |",
+  "        |  | C:\\>whoami                                     |  |",
+  "        |  | I am a software developer._                    |  |",
+  "        |  |                                                |  |",
+  "        |  | [ about ] [ projects ] [ resume ] [ contact ]  |  |",
+  "        |  |                                                |  |",
+  "        |  | tip: press 0-4 to jump between sections        |  |",
+  "        |  `------------------------------------------------'  |",
+  "        +-----------------------------------------------------+",
+  "           /_)_____________________________________________(_/",
+  "            ________________________________________________",
+  "           / [][][][][][][][][][][][][][]  |^|  [][][]     \\   ,-.",
+  "          / [_][_][_][_][_][_][_][_][_][_]=|v|=[_][_][_]   \\  ( @ )",
+  "          /________________________________________________\\  `-'",
+].join("\n");
+
+/* A static ASCII retro computer. */
+export function AsciiPortrait({ className = "" }) {
+  return (
+    <pre className={`ascii figure-canvas portrait ${className}`} aria-hidden="true">
+      {portrait}
+    </pre>
+  );
+}
+
 /* A full-width strip of one art; columns follow the container width. */
 export function AsciiStrip({ art = "rain", rows = 10, className = "" }) {
   const ref = useRef(null);
