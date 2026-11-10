@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.c5e7ce37.css",
-    "main.js": "/static/js/main.1b8bf734.js",
-    "static/media/Jacob-Foster-Resume.pdf": "/static/media/Jacob-Foster-Resume.dae38e439b0dda375619.pdf",
+    "main.js": "/static/js/main.0d2c653c.js",
+    "static/media/Jacob_Foster_Resume_Nov2026.pdf": "/static/media/Jacob_Foster_Resume_Nov2026.be04bce8a72940ff373e.pdf",
     "index.html": "/index.html",
     "main.c5e7ce37.css.map": "/static/css/main.c5e7ce37.css.map",
-    "main.1b8bf734.js.map": "/static/js/main.1b8bf734.js.map"
+    "main.0d2c653c.js.map": "/static/js/main.0d2c653c.js.map"
   },
   "entrypoints": [
     "static/css/main.c5e7ce37.css",
-    "static/js/main.1b8bf734.js"
+    "static/js/main.0d2c653c.js"
   ]
 }
