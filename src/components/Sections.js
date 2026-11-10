@@ -132,7 +132,7 @@ export function Projects() {
 const contacts = [
   { label: "linkedin", href: links.linkedin, text: "linkedin.com/in/jacobnfoster", ext: true },
   { label: "github", href: links.github, text: "github.com/fostej26", ext: true },
-  { label: "resume", href: links.resume, text: "Jacob-Foster-Resume.pdf", ext: true },
+  { label: "resume", href: links.resume, text: "Jacob_Foster_Resume_Nov2026.pdf", ext: true },
   { label: "email", href: links.email, text: "fostej26@mcmaster.ca", ext: false },
 ];
 

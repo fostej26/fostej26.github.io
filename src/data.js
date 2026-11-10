@@ -1,4 +1,4 @@
-import resume from "./assets/Jacob-Foster-Resume.pdf";
+import resume from "./assets/Jacob_Foster_Resume_Nov2026.pdf";
 
 export const links = {
   linkedin: "https://www.linkedin.com/in/jacobnfoster/",
